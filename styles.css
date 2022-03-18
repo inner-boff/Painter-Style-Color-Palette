@@ -1,13 +1,7 @@
 :root {
     --clr-cell-a1: #ffffff;
-    --clr-cell-a2: #188d09;
-    --clr-cell-a3: #1edf05;
-    --clr-cell-b1: #7c7c7c;
-    --clr-cell-b2: red;
-    --clr-cell-b3: #d6b5d6;
-    --clr-cell-c1: #000000;
-    --clr-cell-c2: #595d96;
-    --clr-cell-c3: #0fb5bb;
+    --clr-cell-a2: #7f7f7f;
+    --clr-cell-a3: #000000;
 
     --ff-primary: Arial, Helvetica, sans-serif;
   }
@@ -22,6 +16,10 @@
   h3,
   p {
     margin: 0;
+  }
+
+  h6 {
+    display: none;
   }
 
   body {
@@ -39,6 +37,10 @@
   section {
     padding: 3rem auto;
   }
+
+  /* fieldset {
+    max-width: 500px;
+  } */
 
   .text-center {
     text-align: center;
@@ -65,36 +67,34 @@
     width: min(90%, 65rem);
   }
 
-  /* .grid {
-    display: grid;
-    gap: 1px;
-    grid-template-columns: repeat(3, 1fr);
+  .container-narrow {
+    margin-inline: auto;
+    max-width: 375px;
   }
 
-  .cell {
-    height: 50px;
-    width: 50px;
-  } */
 
-  .grid {
+  .main-palette {
     display: flex; /* establish flex container */
     flex-wrap: wrap; /* enable flex items to wrap */
     justify-content: center;
     /* width: min(50%, 65rem); */
   }
   .cell {
-    flex: 0 0 33%; /* don't grow, don't shrink, width */
+    flex: 0 0 20%; /* don't grow, don't shrink, width */
     height: 75px;
     margin-bottom: 0;
-    /* background-color: #999; */
+    /* border: red solid 1px; */
+    /* color: rgba(255, 0, 0, 0); */
   }
+
 
   /* .cell:nth-child(3n) {
 background-color: #F00;
 } */
 
-  /* #cell-a1 {
+  #cell-a1 {
     background-color: var(--clr-cell-a1);
+    border: var(--clr-cell-a2) 1px solid;
   }
 
   #cell-a2 {
@@ -103,11 +103,11 @@ background-color: #F00;
 
   #cell-a3 {
     background-color: var(--clr-cell-a3);
-  } */
-
-  #cell-b1 {
-    background-color: var(--clr-cell-b1);
   }
+
+  /* #cell-b1 {
+    background-color: var(--clr-cell-b1);
+  } */
 
   /* #cell-b2 {
     background-color: var(--clr-cell-b2);
@@ -117,9 +117,9 @@ background-color: #F00;
     background-color: var(--clr-cell-b3);
   } */
 
-  #cell-c1 {
+  /* #cell-c1 {
     background-color: var(--clr-cell-c1);
-  }
+  } */
 
   /* #cell-c2 {
     background-color: var(--clr-cell-c2);

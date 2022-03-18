@@ -20,41 +20,53 @@
     <!-- esto es versión grid (ver cómo) -->
 
     <section>
-      <div class="container" id="main-palette">
-        <div class="grid">
-          <div class="cell" id="cell-a1">a1</div>
-          <div class="cell" id="cell-a2">a2</div>
-          <div class="cell" id="cell-a3">a3</div>
-          <div class="cell" id="cell-b1">b1</div>
-          <div class="cell" id="cell-b2">b2</div>
-          <div class="cell" id="cell-b3">b3</div>
-          <div class="cell" id="cell-c1">c1</div>
-          <div class="cell" id="cell-c2">c2</div>
-          <div class="cell" id="cell-c3">c3</div>
+      <div class="container container-narrow">
+        <div class="main-palette">
+          <div class="cell" id="cell-a1"><h6>a1</h6></div>
+          <div class="cell" id="cell-b1"><h6>b1</h6></div>
+          <div class="cell" id="cell-c1"><h6>c1</h6></div>
+          <div class="cell" id="cell-d1"><h6>d1</h6></div>
+          <div class="cell" id="cell-e1"><h6>e1</h6></div>
+
+          <div class="cell" id="cell-a2"><h6>a2</h6></div>
+          <div class="cell" id="cell-b2"><h6>b2</h6></div>
+          <div class="cell" id="cell-c2"><h6>c2</h6></div>
+          <div class="cell" id="cell-d2"><h6>d2</h6></div>
+          <div class="cell" id="cell-e2"><h6>e2</h6></div>
+
+          <div class="cell" id="cell-a3"><h6>a3</h6></div>
+          <div class="cell" id="cell-b3"><h6>b3</h6></div>
+          <div class="cell" id="cell-c3"><h6>c3</h6></div>
+          <div class="cell" id="cell-d3"><h6>d3</h6></div>
+          <div class="cell" id="cell-e3"><h6>e3</h6></div>
+
         </div>
       </div>
     </section>
 
-    <fieldset>
-      <legend>base colors</legend>
+    <section class="items-center">
+      <fieldset>
+        <legend>select base colors</legend>
+        <form action="" onchange="asignColors()">
+        <form action="">
+          <label for="">color 1</label>
+          <input type="color" id="first-color" value="#f04300" />
+          <br />
+          <label for="">color 2</label>
+          <input type="color" id="second-color" value="#f30000" />
+          <br />
+          <!-- <label for="try-it">click here to try it</label> -->
+          <!-- <input type="button" id="try-it" onclick="asignColors()" /> -->
+          <label for="try-it">click here to try it</label>
+          <input type="button" id="try-it" onclick="generatePalette()" />
+        </form>
+      </fieldset>
+    </section>
 
-      <!-- <form action="" onchange="asignColor()"> -->
-      <form action="">
-        <label for="">color 1</label>
-        <input type="color" id="first-color" value="#ff0000" />
-        <br />
-        <label for="">color 2</label>
-        <input type="color" id="second-color" value="#ff9999" />
-        <br />
-        <label for="try-it">click here to try it</label>
-        <input type="button" id="try-it" onclick="generatePalette()" />
-      </form>
-    </fieldset>
-
-    <section style="border: red 1px solid">
+    <!-- <section style="border: red 1px solid">
     <p>
       aqui hago pruebitas
-    </p></section>
+    </p></section> -->
 
     <footer>
       <div class="container">
