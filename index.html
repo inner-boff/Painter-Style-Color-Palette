@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Color Palette Generator</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="text-center">
+          <h1>Color Palette Generator</h1>
+        </div>
+      </div>
+    </header>
+
+    <!-- esto es versión grid (ver cómo) -->
+
+    <section>
+      <div class="container" id="main-palette">
+        <div class="grid">
+          <div class="cell" id="cell-a1">a1</div>
+          <div class="cell" id="cell-a2">a2</div>
+          <div class="cell" id="cell-a3">a3</div>
+          <div class="cell" id="cell-b1">b1</div>
+          <div class="cell" id="cell-b2">b2</div>
+          <div class="cell" id="cell-b3">b3</div>
+          <div class="cell" id="cell-c1">c1</div>
+          <div class="cell" id="cell-c2">c2</div>
+          <div class="cell" id="cell-c3">c3</div>
+        </div>
+      </div>
+    </section>
+
+    <fieldset>
+      <legend>base colors</legend>
+
+      <!-- <form action="" onchange="asignColor()"> -->
+      <form action="">
+        <label for="">color 1</label>
+        <input type="color" id="first-color" value="#ff0000" />
+        <br />
+        <label for="">color 2</label>
+        <input type="color" id="second-color" value="#ff9999" />
+        <br />
+        <label for="try-it">click here to try it</label>
+        <input type="button" id="try-it" onclick="generatePalette()" />
+      </form>
+    </fieldset>
+
+    <section style="border: red 1px solid">
+    <p>
+      aqui hago pruebitas
+    </p></section>
+
+    <footer>
+      <div class="container">
+        <div class="text-center">
+          <p>
+            created by <a href="https://github.com/inner-boff">Pamela Soucre</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="/script.js"></script>
+  </body>
+</html>
